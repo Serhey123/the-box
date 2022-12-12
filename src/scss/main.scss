@@ -2,3 +2,8 @@
 @import "./helpers/variables";
 @import "./helpers/mixins";
 @import "./common";
+/*HEADER*/
+@import "./header/nav";
+@import "./header/hero";
+/*MAIN*/
+@import "./main/reputation";

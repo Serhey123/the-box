@@ -1,0 +1,41 @@
+.reputation{
+    padding-top: 60px;
+    padding-bottom: 84px;
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        &-img{
+            margin-bottom: 20px;
+        }
+        &-title{
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: #3D445C;
+        }
+        &-content{
+            font-size: 16px;
+            line-height: 19px;
+            color: #858EAD;
+        }
+        &-item{
+            width: 292px;
+        }
+    }
+    &__card{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        border: 1.4px solid #E0E3EB;
+        border-radius: 4px;
+    }
+}
