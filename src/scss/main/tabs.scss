@@ -1,0 +1,46 @@
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 138px;
+}
+
+.controls{
+    &__item{
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #C2C7D6;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &--active{
+            position: relative;
+            font-weight: 700;
+            color: #2947A9;
+            &::before{
+                position: absolute;
+                display: inline-block;
+                content: "";
+                width: 4px;
+                height: 28px;
+                background: #2947A9;
+                left: -16px
+            }
+        }
+    }
+}
+.panes{
+    width: 800px;
+
+}
+.pane{
+    display: none;
+    &--active{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,35 @@
+.projects__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #292E3D;
+    margin-bottom: 40px;
+}
+
+.project{
+    &__img{
+        width: 384px;
+        height: 247px;
+        object-fit: cover;
+    }
+    &__content{
+        background-color:#2947A9;
+        color: #fff;
+        padding: 12px 1px 16px 12px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+        width: 322px;
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+    &__card:not(:nth-last-child(-n + 2)){
+        margin-bottom: 32px;
+    }
+}
