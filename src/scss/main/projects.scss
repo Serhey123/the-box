@@ -32,4 +32,25 @@
     &__card:not(:nth-last-child(-n + 2)){
         margin-bottom: 32px;
     }
+    &__btn{
+        width: 295px;
+        height: 64px;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 694px;
+    margin-bottom: 32px;
+}
+
+
+.btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-wrapper--disabled{
+    display: none;
 }

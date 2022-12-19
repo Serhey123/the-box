@@ -15,6 +15,7 @@
             margin-bottom: 20px;
         }
         &--active{
+            pointer-events: none;
             position: relative;
             font-weight: 700;
             color: #2947A9;
@@ -38,9 +39,7 @@
     display: none;
     &--active{
         display: block;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+       
     }
 }
 
