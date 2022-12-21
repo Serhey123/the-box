@@ -9,11 +9,8 @@ import Tabs from './js/tabs';
 
 import data from './js/data';
 import refs from './js/refs';
-import {
-  markupSomeItems,
-  nextBtnHandler,
-  prevBtnHandler,
-} from './js/actionFlow';
+
+import renderCards from './js/renderCards.js';
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
@@ -29,44 +26,10 @@ const tabs1 = new Tabs({
   activePaneClass: 'pane--active',
 });
 
-let action;
-
 refs.tabsRef.addEventListener('click', e => {
   if (e.target.id) {
-    const nextBtnRef = document.querySelector('.pane--active .next-btn');
-    const prevBtnRef = document.querySelector('.pane--active .prev-btn');
-
-    nextBtnRef.removeEventListener('click', nextBtn);
-    prevBtnRef.removeEventListener('click', prevBtn);
-    action = markupSomeItems(data, e.target.id);
-
-    if (action.length > 4) {
-      const btnWrapperRef = document.querySelector(
-        '.pane--active .btn-wrapper',
-      );
-      btnWrapperRef.classList.remove('btn-wrapper--disabled');
-    }
-
-    nextBtnRef.addEventListener('click', nextBtn);
-    prevBtnRef.addEventListener('click', prevBtn);
+    renderCards(data, e.target.id);
   }
 });
-function nextBtn() {
-  console.log('click');
-  nextBtnHandler(action);
-}
 
-function prevBtn() {
-  console.log('click');
-  prevBtnHandler(action);
-}
-
-const nextBtnRef = document.querySelector('.pane--active .next-btn');
-const prevBtnRef = document.querySelector('.pane--active .prev-btn');
-action = markupSomeItems(data, 'all');
-if (action.length > 4) {
-  const btnWrapperRef = document.querySelector('.pane--active .btn-wrapper');
-  btnWrapperRef.classList.remove('btn-wrapper--disabled');
-}
-nextBtnRef.addEventListener('click', nextBtn);
-prevBtnRef.addEventListener('click', prevBtn);
+renderCards(data, 'all');

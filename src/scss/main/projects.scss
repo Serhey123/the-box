@@ -54,3 +54,21 @@
 .btn-wrapper--disabled{
     display: none;
 }
+
+.pages-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-btn{
+    border-radius: 50%;
+    border: none;
+    width: 16px;
+    height: 16px;
+    background: #F6F8F7;
+}
+
+.page-btn--active{
+    background: #2947A9;
+}

@@ -1,50 +1,31 @@
-import template from './template';
+import { templateProjectCards } from './template.js';
 
-let currentPage = 0;
-const itemsPerPage = 4;
-let pages;
+import paginator from './paginator.js';
 
-function markupAll(data) {
+export function markupAll(data) {
   const wrapper = document.querySelector('.pane--active .wrapper');
 
   wrapper.innerHTML = '';
 
-  const countStart = itemsPerPage * currentPage;
-  const paginatedItems = data.slice(countStart, countStart + itemsPerPage);
-  pages = Math.ceil(data.length / itemsPerPage);
-  console.log(pages, 'allpages');
+  const paginatedItems = paginator.paginateItems(data);
+
+  paginator.countPages(data);
 
   paginatedItems.forEach(card => {
-    wrapper.insertAdjacentHTML('beforeend', template(card));
+    wrapper.insertAdjacentHTML('beforeend', templateProjectCards(card));
   });
-  return data;
+
+  paginator.currentData = data;
 }
 
 export function markupSomeItems(data, id) {
-  currentPage = 0;
+  paginator.resetPages();
   if (id !== 'all') {
     const filteredData = data.filter(card => {
       return card.type === id;
     });
-    return markupAll(filteredData);
+    markupAll(filteredData);
   } else {
-    return markupAll(data);
-  }
-}
-
-export function nextBtnHandler(data) {
-  if (currentPage + 1 !== pages) {
-    console.log(currentPage, 'curr bef');
-    currentPage += 1;
-    console.log(currentPage, 'curr aft');
-    markupAll(data);
-  }
-}
-export function prevBtnHandler(data) {
-  if (currentPage !== 0) {
-    console.log(currentPage, 'curr bef');
-    currentPage -= 1;
-    console.log(currentPage, 'curr aft');
     markupAll(data);
   }
 }

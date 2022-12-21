@@ -1,4 +1,4 @@
-function template(data) {
+export function templateProjectCards(data) {
   const tempaltedData = `<div class="project__card">
     <img src="${data.url}" alt="${data.type} type building" class="project__img">
     <div class="project__content">
@@ -9,4 +9,7 @@ function template(data) {
   return tempaltedData;
 }
 
-export default template;
+export function templatePageBtns(i) {
+  const tplBtn = `<button class="page-btn" data-page="${i}"></button>`;
+  return tplBtn;
+}
