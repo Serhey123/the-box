@@ -1,12 +1,14 @@
-.projects__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    color: #292E3D;
-    margin-bottom: 40px;
-}
-
 .project{
+    padding-top: 88px;
+    padding-bottom: 138px;
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #292E3D;
+        margin-bottom: 40px;
+    }
+
     &__img{
         width: 384px;
         height: 247px;
@@ -17,7 +19,7 @@
         color: #fff;
         padding: 12px 1px 16px 12px;
     }
-    &__title{
+    &__name{
         font-weight: 700;
         font-size: 20px;
         line-height: 23px;
@@ -57,18 +59,20 @@
 
 .pages-wrapper{
     display: flex;
+    flex-grow: 1;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .page-btn{
+
     border-radius: 50%;
     border: none;
     width: 16px;
     height: 16px;
     background: #F6F8F7;
+    &--active{
+        background: #2947A9;
+    }
 }
 
-.page-btn--active{
-    background: #2947A9;
-}
