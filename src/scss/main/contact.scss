@@ -1,0 +1,80 @@
+.contact{
+    background-color: #F6F8F7;
+    padding: 60px 0;
+    &__title{
+        text-align: center;
+        color: #292E3D;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #292E3D;
+        width: 539px;
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 592px;
+        margin: 0 auto;
+        &-input{
+            height: 41px;
+            width: 280px;
+            background: #FFFFFF;
+            border: 1px solid #E0E3EB;
+            border-radius: 4px;
+            padding: 10px 8px;
+            margin-bottom: 20px;
+            &::placeholder{
+                font-size: 18px;
+                line-height: 21px;
+                color: #A3AAC2;
+                &::after{
+                    content: "* ";
+                }
+            }
+        }
+        &-message{
+            height: 135px;
+            width: 592px;
+            background: #FFFFFF;
+            border: 1px solid #E0E3EB;
+            border-radius: 4px;
+            padding: 10px 8px;
+            resize: none;
+            margin-bottom: 8px;
+            &::placeholder{
+                font-size: 18px;
+                line-height: 21px;
+                color: #A3AAC2;
+            }
+        }
+        &-description{
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 28px;
+        }
+        &-btn{
+            margin: 0 auto;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            height: 53px;
+            width: 271px;
+            background-color: #2947A9;
+            border-radius: 2px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

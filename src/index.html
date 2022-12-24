@@ -28,15 +28,15 @@
             <path d="M9.37721 30.8452V17.4148L0 12V36.2614L19.0014 47.2348V36.4018L9.37721 30.8452Z" fill="#91A1D4" />
           </svg><span class="nav__logo-wrap">The</span>Box</a>
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="#" class="nav__list-link">Home</a></li>
+          <li class="nav__list-item"><a href="#home" class="nav__list-link">Home</a></li>
           <li class="nav__list-item"><a href="#about" class="nav__list-link">About Us</a></li>
           <li class="nav__list-item"><a href="#project" class="nav__list-link">Projects</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__list-link">Services</a></li>
-          <li class="nav__list-item"><a href="#" class="nav__list-link">Contact Us</a></li>
+          <li class="nav__list-item"><a href="#services" class="nav__list-link">Services</a></li>
+          <li class="nav__list-item"><a href="#contact" class="nav__list-link">Contact Us</a></li>
         </ul>
       </nav>
     </div>
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -75,9 +75,10 @@
     </div>
   </header>
   <main>
+
     <section class="reputation">
       <div class="container">
-        <h2 class="reputation__title">Our Reputation</h2>
+        <h2 class="reputation__title title">Our Reputation</h2>
         <ul class="reputation__list">
           <li class="reputation__list-item">
             <div class="reputation__card">
@@ -107,13 +108,14 @@
         </ul>
       </div>
     </section>
+
     <section class="about" id="about">
       <div class="container">
         <div class="about__wrapper">
 
           <img src="./images/about.jpg" alt="" class="about__img">
           <div class="about__content">
-            <h2 class="about__title">About us</h2>
+            <h2 class="about__title title">About us</h2>
             <p class="about__text">For more than 30 years we have been delivering world-class construction and we’ve
               built
               many lasting relationships along the way. </p>
@@ -124,9 +126,56 @@
         </div>
       </div>
     </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title title">Services</h2>
+        <div class="services__content">
+          <ul class="services__list">
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-construction-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Construction</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-renovation-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Renovation</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-consultation-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Consultation</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-repair-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Repair Services</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-architecture-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Architecture</p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="" class="services__link">
+                <img src="./images/services-electric-img.svg" alt="" class="services__link-img">
+                <p class="services__link-title">Electric</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="project" id="project">
       <div class="container">
-        <h2 class="project__title">Projects</h2>
+        <h2 class="project__title title">Projects</h2>
         <div class="tabs" id="tabs-1">
           <div class="controls" data-controls>
             <a href="#one" class="controls__item" id="all">All</a>
@@ -198,7 +247,86 @@
           </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="contact__title title">What can us do for you?</h2>
+        <p class="contact__subtitle">We are ready to work on a project of any complexity, whether it’s commercial or
+          residential.</p>
+        <form action="#" class="contact__form">
+          <input type="text" name="name" class="contact__form-input" placeholder="Your name*" />
+          <input type="email" name="email" class="contact__form-input" placeholder="Email*" />
+          <input type="text" name="reason" class="contact__form-input" placeholder="Reason for Contacting*" />
+          <input type="text" name="phone" class="contact__form-input" placeholder="Phone" />
+          <textarea name="message" class="contact__form-message" placeholder="Message"></textarea>
+          <p class="contact__form-description">* indicates a required field</p>
+          <button class="contact__form-btn" type="submit" type="reset">Submit</button>
+        </form>
+      </div>
+    </section>
   </main>
+  <footer>
+
+    <section class="contact-footer">
+      <div class="container">
+        <div class="contact-footer__content">
+          <address class="contact-footer__info">
+            <ul class="contact-footer__list">
+              <li class="contact-footer__item">
+                <h3 class="contact-footer__title">Address:</h3>
+                <a href="https://goo.gl/maps/7Ab1cZdVGdVPT4Fs5" class="contact-footer__link">6391 Elgin St. Celina,
+                  Delaware 10299</a>
+              </li>
+              <li class="contact-footer__item">
+                <h3 class="contact-footer__title">Phone:</h3>
+                <a href="tel:+8411022703" class="contact-footer__link">+84 1102 2703</a>
+              </li>
+              <li class="contact-footer__item">
+                <h3 class="contact-footer__title">Email:</h3>
+                <a href="mailto:hello@thebox.com" class="contact-footer__link">hello@thebox.com</a>
+              </li>
+              <li><a href="#" class="nav__logo"><svg width="38" height="48" viewBox="0 0 38 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.0017 36.6673V47.5003L38 36.5269V25.6952L19.0017 36.6673Z" fill="#2947A9" />
+                    <path d="M27.5062 15.745L36.8802 10.3284L19.0017 0V10.8328L27.5062 15.745Z" fill="#0B267D" />
+                    <path d="M11.6182 18.9795V29.8158L19.0015 34.0795V23.2481L11.6182 18.9795Z" fill="#91A1D4" />
+                    <path d="M38 12.2701L19.0017 23.2481V34.0795L38 23.1061V12.2701Z" fill="#2947A9" />
+                    <path d="M1.13135 10.3221L10.4492 15.7703L19.0014 10.8328V0L1.13135 10.3221Z" fill="#2947A9" />
+                    <path d="M9.37721 30.8452V17.4148L0 12V36.2614L19.0014 47.2348V36.4018L9.37721 30.8452Z"
+                      fill="#91A1D4" />
+                  </svg><span class="nav__logo-wrap">The</span>Box</a></li>
+            </ul>
+          </address>
+          <div class="contact-footer__social">
+            <ul class="contact-footer__list">
+              <li class="contact-footer__item">
+                <h3 class="contact-footer__title contact-footer__social-title">Newsletter:</h3>
+                <form action="#" class="contact-footer__form">
+                  <input type="email" class="contact__form-input" placeholder="Your email here" />
+                  <button class="contact-footer__form-btn">Subscribe</button>
+                </form>
+              </li>
+              <li class="contact-footer__item">
+                <h3 class="contact-footer__title contact-footer__social-title">Social:</h3>
+                <ul class="social-list">
+                  <li class="social-item"><a href="" class="social-link social-link__facebook"></a></li>
+                  <li class="social-item"><a href="" class="social-link social-link__linkedin"></a></li>
+                  <li class="social-item"><a href="" class="social-link social-link__twitter"></a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <div class="container">
+        <p class="copyright__content">TheBox Company © 2022. All Rights Reserved</p>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
