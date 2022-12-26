@@ -67,3 +67,8 @@ html {
         font-size: 36px;
         line-height: 42px;
   }
+
+  .overflow-hidden{
+    overflow: hidden;
+    pointer-events: none;
+  }

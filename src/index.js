@@ -26,6 +26,20 @@ const tabs1 = new Tabs({
   activePaneClass: 'pane--active',
 });
 
+const menuBtnRef = document.querySelector('.nav__menu');
+menuBtnRef.addEventListener('click', e => {
+  e.target.classList.toggle('nav__menu-active');
+  const menu = document.querySelector('.nav__list');
+  menu.classList.toggle('menu__active-display');
+  document.body.classList.toggle('overflow-hidden');
+  menu.addEventListener('click', e => {
+    if (e.target.nodeName === 'A') {
+      menu.classList.remove('menu__active-display');
+      document.body.classList.remove('overflow-hidden');
+    }
+  });
+});
+
 refs.tabsRef.addEventListener('click', e => {
   if (e.target.id) {
     renderCards(data, e.target.id);

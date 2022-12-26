@@ -7,8 +7,6 @@
         margin-bottom: 50px;
     }
     &__list{
-        display: flex;
-        justify-content: space-around;
         &-img{
             margin-bottom: 20px;
         }
@@ -35,5 +33,23 @@
         padding-bottom: 40px;
         border: 1.4px solid #E0E3EB;
         border-radius: 4px;
+    }
+}
+@media(max-width:$mobile-bp-max){
+    .reputation{
+        &__list{
+            &-item:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+@media(min-width:$tablet-bp-min){
+    .reputation{
+        &__list{
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }

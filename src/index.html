@@ -16,8 +16,8 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <nav class="nav">
+    <div class="nav__container ">
+      <nav class="nav container">
         <a href="#" class="nav__logo"><svg width="38" height="48" viewBox="0 0 38 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M19.0017 36.6673V47.5003L38 36.5269V25.6952L19.0017 36.6673Z" fill="#2947A9" />
@@ -27,7 +27,10 @@
             <path d="M1.13135 10.3221L10.4492 15.7703L19.0014 10.8328V0L1.13135 10.3221Z" fill="#2947A9" />
             <path d="M9.37721 30.8452V17.4148L0 12V36.2614L19.0014 47.2348V36.4018L9.37721 30.8452Z" fill="#91A1D4" />
           </svg><span class="nav__logo-wrap">The</span>Box</a>
-        <ul class="nav__list">
+        <button class="nav__menu">
+          <span></span>
+        </button>
+        <ul class="nav__list menu__active">
           <li class="nav__list-item"><a href="#home" class="nav__list-link">Home</a></li>
           <li class="nav__list-item"><a href="#about" class="nav__list-link">About Us</a></li>
           <li class="nav__list-item"><a href="#project" class="nav__list-link">Projects</a></li>
@@ -66,8 +69,8 @@
         </div>
         <div class="slider-button-wrapper">
           <div class="slider-button-prev slider-button"><img src="./images/prev-arrow.svg" alt=""
-              class="slider-button-prev-arrow">Back</div>
-          <div class="slider-button-next slider-button">Next<img src="./images/next-arrow.svg" alt=""
+              class="slider-button-prev-arrow"></div>
+          <div class="slider-button-next slider-button"><img src="./images/next-arrow.svg" alt=""
               class="slider-button-next-arrow">
           </div>
         </div>
