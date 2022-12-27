@@ -1,44 +1,105 @@
-.tabs{
-    display: flex;
-    justify-content: space-between;
-}
-
 .controls{
     &__item{
         display: block;
         font-weight: 500;
-        font-size: 24px;
         line-height: 28px;
         color: #C2C7D6;
+    }
+}
+
+.pane{
+    display: none;
+    animation: fadeEffect 1s ease;
+    &--active{
+        display: block;
+
+    }
+}
+
+@keyframes fadeEffect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@media(max-width:$mobile-bp-max){
+    .controls{
+        &__item{
+            padding: 5px 10px;
+            font-size: 13px;
+            min-width: 50px;
+        }
+    }
+}
+
+@media(max-width:$tablet-bp-max){
+    .controls{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &__item{
+            text-align: center;
+            border-radius: 3px;
+            &--active{
+                pointer-events: none;
+                font-weight: 700;
+                color: #fff;
+                background-color: #2947A9;
+                transition: all 0.3s ease;
+
+            }
+        }
+    }
+}
+@media (min-width:$mobile-bp-max) and (max-width:$tablet-bp-max){
+    .controls{
+        justify-content: space-evenly;
+        &__item{
+            padding: 5px 20px;
+            font-size: 20px;
+            min-width: 100px;
+        }
+    }
+}
+@media(min-width:$desktop-bp-min){
+.controls{
+    &__item{
+        font-size: 24px;
         &:not(:last-child){
             margin-bottom: 20px;
+        }
+        &::before{
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 4px;
+            height: 28px;
+            background: #2947A9;
+            left: -16px;
+            opacity: 0;
+            transition: all 0.3s ease;
         }
         &--active{
             pointer-events: none;
             position: relative;
             font-weight: 700;
             color: #2947A9;
+            transition: all 0.3s ease;
             &::before{
-                position: absolute;
-                display: inline-block;
-                content: "";
-                width: 4px;
-                height: 28px;
-                background: #2947A9;
-                left: -16px
+                opacity: 1;
             }
         }
     }
 }
-.panes{
-    width: 800px;
-
-}
-.pane{
-    display: none;
-    &--active{
-        display: block;
-       
+    .tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .panes{
+        width: 800px;
+    
     }
 }
-

@@ -35,17 +35,21 @@
         border-radius: 4px;
     }
 }
-@media(max-width:$mobile-bp-max){
+@media(max-width:$tablet-bp-max){
     .reputation{
         &__list{
-            &-item:not(:last-child){
-                margin-bottom: 20px;
+            &-item{
+                width: 100%;
+                margin: 0 auto;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
             }
         }
     }
 
 }
-@media(min-width:$tablet-bp-min){
+@media(min-width:$desktop-bp-min){
     .reputation{
         &__list{
             display: flex;

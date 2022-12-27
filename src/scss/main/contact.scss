@@ -1,6 +1,22 @@
 .contact{
+    position: relative;
+    overflow: auto;
+    max-height: 100vh ;
     background-color: #F6F8F7;
     padding: 60px 0;
+    &__btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: red;
+        border: none;
+        width: 30px;
+        font-size: 24px;
+        height: 30px;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
     &__title{
         text-align: center;
         color: #292E3D;
@@ -13,19 +29,14 @@
         line-height: 23px;
         text-align: center;
         color: #292E3D;
-        width: 539px;
         margin: 0 auto;
         margin-bottom: 38px;
     }
     &__form{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 592px;
         margin: 0 auto;
         &-input{
             height: 41px;
-            width: 280px;
+
             background: #FFFFFF;
             border: 1px solid #E0E3EB;
             border-radius: 4px;
@@ -42,7 +53,7 @@
         }
         &-message{
             height: 135px;
-            width: 592px;
+
             background: #FFFFFF;
             border: 1px solid #E0E3EB;
             border-radius: 4px;
@@ -63,6 +74,7 @@
             margin-bottom: 28px;
         }
         &-btn{
+            display: block;
             margin: 0 auto;
             color: #FFFFFF;
             font-weight: 600;
@@ -76,5 +88,39 @@
             border: none;
             cursor: pointer;
         }
+    }
+}
+@media(max-width:$mobile-bp-max){
+    .contact{
+        &__form{
+            &-input{
+                width: 100%;
+            }
+            &-message{
+                width: 100%;
+            }
+        }
+
+    }
+}
+@media(min-width:$tablet-bp-min){
+    .contact{
+        &__subtitle{
+            width: 539px;
+        }
+        &__form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 592px;
+            margin: 0 auto;
+            &-input{
+                width: 280px;
+            }
+            &-message{
+                width: 592px;
+            }
+        }
+        
     }
 }

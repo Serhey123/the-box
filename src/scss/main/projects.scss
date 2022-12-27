@@ -2,13 +2,12 @@
     padding-top: 88px;
     padding-bottom: 138px;
     &__title{
-       
         color: #292E3D;
         margin-bottom: 40px;
     }
-
     &__img{
-        width: 384px;
+        width: 354px;
+
         height: 247px;
         object-fit: cover;
     }
@@ -22,55 +21,81 @@
         font-size: 20px;
         line-height: 23px;
         margin-bottom: 12px;
-        width: 322px;
     }
     &__text{
         font-size: 18px;
         line-height: 21px;
-
-    }
-    &__card:not(:nth-last-child(-n + 2)){
-        margin-bottom: 32px;
     }
     &__btn{
-        width: 295px;
-        height: 64px;
+        border: none;
     }
 }
 .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 694px;
     margin-bottom: 32px;
 }
-
-
 .btn-wrapper{
     display: flex;
     justify-content: space-between;
 }
-
 .btn-wrapper--disabled{
     display: none;
 }
-
 .pages-wrapper{
     display: flex;
     flex-grow: 1;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .page-btn{
-
     border-radius: 50%;
     border: none;
     width: 16px;
     height: 16px;
     background: #F6F8F7;
+    transition: background-color 0.3s ease;
     &--active{
         background: #2947A9;
     }
 }
+@media(max-width:$mobile-bp-max){
+.project{
+    &__card:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+}
+@media(min-width:$tablet-bp-min) and (max-width:$tablet-bp-max){
+    .project{
+        &__card:nth-child(-n + 2){
+            margin-bottom: 32px;
+        }
+    }
+}
+@media(min-width:$tablet-bp-min){
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 694px;
 
+    }
+}
+@media(min-width:$desktop-bp-min){
+    .project{
+        &__img{
+            width: 384px;
+
+        }
+        &__name{
+            width: 322px;
+        }
+        &__card:not(:nth-last-child(-n + 2)){
+            margin-bottom: 32px;
+        }
+        &__btn{
+            width: 295px;
+            height: 64px;
+        }
+    }
+
+}

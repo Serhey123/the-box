@@ -1,9 +1,5 @@
 .contact-footer{
     padding: 85px 0;
-    &__content{
-        display: flex;
-        justify-content: space-between;
-    }
     &__info{
         font-style: normal;
     }
@@ -63,6 +59,21 @@
         }       
         &__twitter{
             background-image: url(../images/social-img-twitter.svg);
+        }
+    }
+}
+@media(max-width:$mobile-bp-max){
+    .contact-footer{
+        &__info{
+            margin-bottom: 32px;
+        }
+    }
+}
+@media(min-width:$tablet-bp-min){
+    .contact-footer{
+        &__content{
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
