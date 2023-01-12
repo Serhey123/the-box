@@ -43,15 +43,18 @@
         height: 40px;
         border: none;
         background-color: #292E3D;
-        color:#fff;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.2s ease, font-size 0.1s ease;
+        &:hover{
+            background-color: #1c2645;
+        }
+        &:active{
+            font-size: 17px;
+            background-color: #12192f;
+        }
         &-prev{
             border-right: 1px solid #b3b2b2;
         }
@@ -70,7 +73,15 @@
 }
 
 .swiper-button-disabled{
-    background-color: #565c6e;;
+    background-color: #565c6e;
+    cursor: auto;
+    &:hover{
+        background-color: #565c6e;
+    }
+    &:active{
+        font-size: 17px;
+        background-color: #565c6e;
+    }
 }
 @media(max-width:$tablet-bp-max){
     

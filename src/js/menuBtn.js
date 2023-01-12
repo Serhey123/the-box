@@ -10,7 +10,7 @@ export default function menuBtnHandler(e) {
 }
 
 function closeMenu(e) {
-  if (e.target.nodeName === 'A') {
+  if (e.target.nodeName === 'A' || e.target.nodeName === 'BUTTON') {
     refs.menuRef.classList.remove('menu__active-display');
 
     document.body.classList.remove('overflow-hidden');

@@ -20,14 +20,20 @@
     &__link{
         font-size: 20px;
         line-height: 23px;
+        font-weight: 400;
         text-transform: capitalize;
         color: #292E3D;
-
+        transition: color 0.2s ease;
+        &:hover{
+          font-weight: 600;
+          color: #364162;
+        }
     }
     &__social-title{
         margin-bottom: 20px;
     }
     &__form-btn{
+        cursor: pointer;
         border: none;
         font-weight: 600;
         font-size: 18px;
@@ -38,6 +44,13 @@
         height: 41px;
         background: #F9995D;
         border-radius: 4px;
+        &:hover{
+            background-color: #ff6200;
+        }
+        &:active{
+            font-size: 17px;
+            background-color: #ae4300;
+        }
     }
 }
 
@@ -51,14 +64,12 @@
         display: block;
         width: 40px;
         height: 40px;
-        &__facebook{
-            background-image: url(../images/social-img-facebook.svg);
+        &__logo{
+            transition: fill 0.2s ease ;
         }
-        &__linkedin{
-            background-image: url(../images/social-img-linkedin.svg);
-        }       
-        &__twitter{
-            background-image: url(../images/social-img-twitter.svg);
+ 
+        &:hover .social-link__logo{
+            fill: #2947A9;
         }
     }
 }

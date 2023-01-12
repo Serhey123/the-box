@@ -1,30 +1,30 @@
 export default [
   {
-    url: 'https://s3-alpha-sig.figma.com/img/089b/f250/bdd2caa4b33e7eb864d788a16c95da1e?Expires=1673222400&Signature=e5N0Jiq0kaWZkptpSOVEti5pPl4XyUpUKuaESJlk0p~vCdDHFACLvetw7ksokghB16biHtDFSi8dxriNjQKTZ0MC9G-uBgAdgHmnVPQs7sR90H2UKStWaygMoT0GwqAE-D~WWVMnbztChSnIHrH6jgj-Npllq28iaNhgsoeEnyKU7b9hM9nQk2LYwrbxh1MAaxhD738ZUYhW4v5ZJv2SzU3jUK5xmTUieEI5boN5iroVIB8jHd7~Q86x8sQFymC5g~LnCH4rLAXBsGD~e7YBJiK6cAit6ccxXU5bP7IbOpQSJey689o2rNfFwVnsjUfEdNm0OJWBLyjUxX-HU-pstw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    url: 'https://media.architecturaldigest.com/photos/5d76c7266c05d1000ae1dff8/master/w_1867,h_2000,c_limit/GettyImages-664617586.jpg',
     name: 'Wildstone Infra Hotel',
     address: '2715 Ash Dr. San Jose, South Dakota',
     type: 'commercial',
   },
   {
-    url: 'https://s3-alpha-sig.figma.com/img/f042/d9f3/6de69d6d289fec45cc15040db6b8cb7c?Expires=1673222400&Signature=VPHQRuzBFg2qoSBeCi5aX7QYXD61T9inJ1cRVNmHovN4Iv4VxJ-plxdBZPnM~AvHONj8H8Bn8lEo21ZTE-mU49Apy63L8mkQbijqqi-3uu4r97k9iXs7sIhnqVm81cL-sGt-lDjn6e5cMmjBUOyV7ogMRGD2sX97jh3GtOptcyxRtOdaBmlF8jMFcbVKdVP1Ye-SfSnJTaVmbxTPTQ02xFxFny0f2DTrUX5Aiz-88f56id2Z2kbq2~gm4V-a5pGCN--cGLqe9mj8fEZxv0Ct5Y1sUhtT0dtN~3YX5tbjVddif05kSg9bSUFHZNzYt5cM0t~gmjTgqbVvNJaqzXad4A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/HK-2IFC-sj_cropped.jpg/640px-HK-2IFC-sj_cropped.jpg',
     name: 'Wish Stone Building',
     address: '2972 Westheimer Rd. Santa Ana, Illinois',
     type: 'commercial',
   },
   {
-    url: 'https://s3-alpha-sig.figma.com/img/028a/0cef/1bf65382382cde195cc45b34a13e4399?Expires=1673222400&Signature=OQHMfPsfoBwljTwk4HsKKJPcd1S~fzJ~faC3iyEVqn6iA1MGZZZkxYOgDffcIkBtOCJz3ER58qR7bYt~t6deIJ-vLZWxw7jR8eNNKIUQKSX2SCrI-dO8QAAavu7iyHIfHvKgBkNIQc0Pdl45Hjo3PwJ8645FtQFp9oma1uPTp5xFHP7r6n9TKyMu-vAWcO~1vy9oH4uKCvUmD5joS8A4hC2PMwv8KNzR~emnAgihgt8T20qby4LECTtMoSudRfrLsqiww8YSkE6P4Wit5wSVk5pb1RNGJo0FnncqVc69StwhCbNCeXFau539g-eAfOd6FKlfkLXRsAnboOVz1e1FwA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
     name: 'Mr. Parkinston’s House',
     address: '3517 W. Gray St. Utica, Pennsylvania',
     type: 'residental',
   },
   {
-    url: 'https://s3-alpha-sig.figma.com/img/efb3/57ca/4521dda2f5a91dd1a02dbc47a02c9f36?Expires=1673222400&Signature=miNpgVgV7UNgoTSZ5dEc2~UJ9PkCWK0iroZX0U6WkEzpLxzMCyRJ2Bp~SKwAxirkpe7YKH2ta~IxEDT6c5KM-UvTGleQD2Ta7S-XGPAkueYcfobgNHfgnMDdP~fKqPD4CdarCY7Zwqa3yEDuqU6GiEas028vE~eXuEuRaidAMdBxSUuFlBP6AbS25gaam9afL-vR-rnsOSFgRFWLrjDaTALI5ybz-EDL~tdaRcP1~S~4rcUx6u4bgJ5sZhgb7icEPNBkS9fJrnhnW71LQI62zYL~PMO-HzD6Tx82ZaNVZH9UMel4VnDWnLVN1bH~5w9noMC7nij8j5Uf29rs81YHJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    url: 'https://i.natgeofe.com/k/36ab45c4-e88c-4cc8-a71f-5103a0fc008c/a-8-skyscrapers-turning-torso_2x3.jpg',
     name: 'Oregano Height',
     address: '2464 Royal Ln. Mesa, New Jersey',
     type: 'commercial',
   },
   {
-    url: 'https://s3-alpha-sig.figma.com/img/522e/6a5f/380cba7232041d621d835a77aaeaf072?Expires=1673222400&Signature=IadBwlXBsA6ALxRNdKiyhAyp0iNiYaSElGsdvPUJ3Usvc7fKzAKgfhCBUH6NdomTlDO7Td7~xx6jk14-cO7~Vqp4G8A4VYXf1uvazE8NtMOmgnX-fNghfjYypNkBs3GoIan0E4gBnr7ObJDeFzHWcQoeceTSM2G441ob3lvEO5WqFiZsOtVx6E1INdB4cilnSR-e4nw5hM~mgLkC3jYQGUShHWGEtFELhqRmaZesmKrnYpnsFNdL-61API6CdbV3LQWa0v9-24LE4W6YBu-kebcdmkhJEcDymK3SYhQWTEaQNiZ2UU7Kz~kbUtB7l9uL-iVAgaqmSvQv4d5cyqcJcg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+    url: 'https://static.dezeen.com/uploads/2017/03/the-mit-media-lab-worlds-best-university-architecture-20-qs-survey-ranking-flickr-knight-foundation_dezeen_hero.jpg',
     name: 'The University of Architecture',
     address: '2207 Piedmont Ave Berkeley, California',
     type: 'other',

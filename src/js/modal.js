@@ -2,7 +2,7 @@ import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 
 export const instance = basicLightbox.create(`
-<section class="contact" id="contact">
+<section class="contact">
       <div class="container">
         <button class="contact__btn">&#215;</button>
         <h2 class="contact__title title">What can us do for you?</h2>
@@ -18,7 +18,7 @@ export const instance = basicLightbox.create(`
           <button class="contact__form-btn" type="submit" type="reset">Submit</button>
         </form>
       </div>
-    </section>
+</section>
 `);
 
 export function modalBtnHandler(e) {
