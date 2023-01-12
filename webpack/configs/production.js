@@ -40,6 +40,7 @@ module.exports = env => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      favicon: './favicon.png',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
