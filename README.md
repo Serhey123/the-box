@@ -6,6 +6,8 @@
 - .container and media
 - font mixin
 - handlebars
+- swiper.js
+- basicLightbox.js
 
 ### Deploying/Publishing
 
